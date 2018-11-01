@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Motion, spring } from 'react-motion'
 import { spring as springConf } from '@aragon/ui'
@@ -57,7 +57,7 @@ class Onboarding extends React.PureComponent {
     visible: PropTypes.bool,
     daoCreationStatus: PropTypes.string,
     onComplete: PropTypes.func,
-    onBuildDao:  PropTypes.func,
+    onBuildDao: PropTypes.func,
     onOpenOrganization: PropTypes.func,
     onResetDaoBuilder: PropTypes.func,
     banner: PropTypes.any,
