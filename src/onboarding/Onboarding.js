@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import styled from 'styled-components'
 import { Motion, spring } from 'react-motion'
 import { spring as springConf } from '@aragon/ui'
@@ -49,6 +50,19 @@ const initialState = {
 }
 
 class Onboarding extends React.PureComponent {
+  static propTypes = {
+    account: PropTypes.string,
+    balance: PropTypes.object,
+    walletNetwork: PropTypes.string,
+    visible: PropTypes.bool,
+    daoCreationStatus: PropTypes.string,
+    onComplete: PropTypes.func,
+    onBuildDao:  PropTypes.func,
+    onOpenOrganization: PropTypes.func,
+    onResetDaoBuilder: PropTypes.func,
+    banner: PropTypes.any,
+  }
+
   static defaultProps = {
     account: '',
     balance: null,
